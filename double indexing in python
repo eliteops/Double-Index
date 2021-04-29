@@ -1,0 +1,14 @@
+def double_index(lst, index):
+  # Checks to see if index is too big
+  if index >= len(lst):
+    return lst
+  else:
+    # new_list after multiplying at index
+    new_list = lst[index]*index
+    lst.pop(index)
+ # Inserting new_list at indexing 
+    lst.insert(index, new_list)
+  #  return lst
+    return lst
+  
+print(double_index([3, 8, -10, 12], 2))
